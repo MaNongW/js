@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function backDay() {
+            var year = prompt('请您输入年份：');
+            if (isRunYear(year)) {
+                alert('当前年份是闰年2月份有29天');
+            } else {
+                alert('当前年份是闰年2月份有28天');
+            }
+        }
+
+        backDay();
+
+        function isRunYear(year) {
+            var flag = false;
+            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+                flag = true;
+            }
+            return flag;
+        }
+    </script>
+</body>
+</html>

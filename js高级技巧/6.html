@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>点击</button>
+    <script>
+        var that;
+        var _that;
+        class Star {
+            constructor(uname, age) {
+                that = this;
+                console.log(this);
+                that = this;
+                this.uname = uname;
+                this.age = age;
+                this.btn = document.querySelector('button');
+                this.btn.onclick = this.sing;
+            }
+            sing() {
+                console.log(this);
+                console.log(that.uname);
+            }
+            dance() {
+                _that = this;
+                console.log(this);
+            }
+        }
+
+        var ldh = new Star('刘德华');
+        console.log(that === ldh);
+        ldh.dance();
+        console.log(_that === ldh);
+    </script>
+</body>
+</html>

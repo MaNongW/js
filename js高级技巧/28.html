@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button></button>
+    <script>
+        function fn() {
+            console.log('普通函数的this' + this);
+        }
+        window.fn();
+
+        var o = {
+            sayHi: function() {
+                console.log('对象方法的this' + this);
+            }
+        }
+
+        o.sayHi();
+
+        function Star() {};
+        Star.prototype.sing = function() {
+
+        }
+        var ldh = new Star();
+
+        var btn = document.querySelector('button');
+        btn.onclick = function() {
+            console.log('绑定时间函数的this:' + this);
+        };
+
+        window.setTimeout(function() {
+            console.log('定时器的this:' + this);
+        }, 1000);
+
+        (function() {
+            console.log('立即执行的this + this');
+        }) ()
+    </script>
+</body>
+</html>

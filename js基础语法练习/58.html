@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var o = {
+            age: 18
+        }
+        if (o['sex']) {
+            console.log('里面有该属性');
+        } else {
+            console.log('没有该属性');
+        }
+
+        var str = 'abcoefoxyozzopp';
+        var o = {};
+        for (var i = 0; i < str.length; i++) {
+            var chars = str.charAt(i);
+            if (o[chars]) {
+                o[chars++];
+            } else {
+                o[chars] = 1;
+            }
+        }
+        console.log(o);
+
+        var max = 0;
+        var ch = '';
+        for (var k in o) {
+            if (0[k] > max) {
+                max = o[k];
+                ch = k;
+            }
+        }
+        console.log(max);
+        console.log('最多的字符是' + ch);
+    </script>
+</body>
+</html>

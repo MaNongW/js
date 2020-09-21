@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的同学都是一群什么垃圾</title>
+</head>
+<body>
+    <button>传统注册事件</button>
+    <button>方法监听事件</button>
+    <script>
+        var btns = document.querySelectorAll('button');
+        // btns[0].onclick = function(){
+        //     alert('are u ok');
+        // }
+            btns[1].addEventListener('click',function(){
+                alert('我很厉害的');
+            })
+            btns[1].addEventListener('click',function(){
+                alert('你也很厉害的');
+            })
+    </script>
+</body>
+</html>

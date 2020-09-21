@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getSum(num1, num2) {
+            console.log(num1 + num2);
+        }
+        getSum(1, 2);
+        getSum(2, 3);
+
+        function getSums(start, end) {
+            var sum = 0;
+            for (var i = start; i <= end; i++) {
+                sum += i;
+            }
+            console.log(sum);
+        }
+
+        getSums(1, 100);
+        getSums(1, 39);
+
+    </script>
+</body>
+</html>

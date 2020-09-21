@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>扩展运算符</title>
+</head>
+<body>
+    <div>1</div>
+    <div>4</div>
+    <div>3</div>
+    <div>6</div>
+    <div>2</div>
+    <div>5</div>
+    <script>
+        let ary = ['a', 'b', 'c'];
+        console.log(...ary);
+        console.log('a', 'b', 'c');
+
+        let ary1 = [1, 2, 3];
+        let ary2 = [4, 5, 6];
+        let ary3 = [...ary1, ...ary2];
+        console.log(ary3);
+
+        let arr1 = [1, 2, 3];
+        let arr2 = [4 ,5 ,6];
+
+        arr1.push(...arr2);
+        console.log(arr1);
+
+        var oDivs = document.querySelectorAll('div');
+        console.log(oDivs);
+        var arr3 = [...oDivs];
+        arr3.push('a');
+        console.log(arr3);
+    </script>
+</body>
+</html>

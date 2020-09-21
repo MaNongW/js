@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我有当自动驾驶工程师</title>
+</head>
+<body>
+    <div getTime = '20' date-index='2'></div>
+    <script>
+        var div = document.querySelector('div');
+        console.log(div.getAttribute('getTime'));
+        div.setAttribute('date-time',20);
+        console.log(div.getAttribute('date-index'));
+        console.log(div.dataset['index']);
+    </script>
+</body>
+</html>

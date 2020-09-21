@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sum = 0;
+        for (var i = 1; i <= 100; i++) {
+            sum += i;
+        }
+        console.log(sum);
+
+        var sum = 0;
+        for (var i = 10; i <= 50; i++) {
+            sum += i;
+        }
+        console.log(sum);
+
+        function getSum(num1, num2) {
+            var sum = 0;
+            for (var i = num1; i <= num2; i++) {
+                sum += i;
+            } 
+            console.log(sum);
+        }
+
+        getSum(1, 100);
+        getSum(10, 50);
+        getSum(1, 1000);
+    </script>
+</body>
+</html>

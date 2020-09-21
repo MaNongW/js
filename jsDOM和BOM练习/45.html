@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.addEventListener('click',function(e){
+            console.log(e.clientX);
+            console.log(e.clientY); 
+            //  以墙为参照物  
+        console.log('---------------');
+        console.log(e.pageX);
+        console.log(e.pageY);
+        })
+    </script>
+</body>
+</html>

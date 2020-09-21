@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function reverse(arr) {
+            if (Array.isArray(arr)) {
+                var newArr = [];
+                for (var i = arr.length - 1; i >= 0; i--) {
+                    newArr[newArr.length] = arr[i];
+                }
+                return newArr;
+            } else {
+                return 'error 这个参数要求必须是数组格式 [1, 2 ,3 ,4 ,5]'
+            }
+        }
+        console.log(reverse([1, 2 ,3 ,4, 5 ,5]));
+        console.log(reverse(2 ,4 ,6 ,6, 1, 8, 9, 0));
+
+        var arr = [];
+        var obj = {};
+        console.log(arr instanceof Array);
+        console.log(obj instanceof Array);
+
+        console.log(Array.isArray(arr));
+        console.log(Array.isArray(obj));
+    </script>
+</body>
+</html>

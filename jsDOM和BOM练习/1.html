@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>知否知否，应是等你很久2333</li>
+        <li>知否知否，应是等你很久</li>
+        <li>知否知否，应是等你很久</li>
+        <li>知否知否，应是等你很久</li>
+        <li>知否知否，应是等你很久</li>
+    </ul>
+    <ul id="nav">
+        <li>pink老师好骚说的呢2333</li>
+        <li>pink老师好骚说的呢</li>
+        <li>pink老师好骚说的呢</li>
+        <li>pink老师好骚说的呢</li>
+        <li>pink老师好骚说的呢</li>
+    </ul>
+    <script>
+       var lis = document.getElementsByTagName('li');
+       console.log(lis);
+       console.log(lis[0]);
+       for(var i = 0;i < lis.length;i++){
+           console.log(lis[i]);
+       }
+       var nav = document.getElementById('nav')
+       var navlis = nav.getElementsByTagName('li');
+       console.log(navlis)
+    </script>
+</body>
+</html>
